@@ -5,6 +5,8 @@ package com.nalin.springbootmongo.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.nalin.springbootmongo.api.PersonManager;
 import com.nalin.springbootmongo.api.domain.Person;
 
@@ -12,6 +14,7 @@ import com.nalin.springbootmongo.api.domain.Person;
  * @author nalin
  *
  */
+@Service
 public class PersonManagerImpl implements PersonManager {
 
 	/* (non-Javadoc)
