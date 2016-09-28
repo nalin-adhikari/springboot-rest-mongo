@@ -1,2 +1,13 @@
 # springboot-rest-mongo
-REST project build on Spring Boot data based in Mongo DB
+Clone this project to your local workspace.<br/>
+`cd \path\to\project`<br/>
+`gradle eclipse`<br/>
+Import this project to eclipse.
+
+##Mongodb Configuration:
+Download mongodb<br>
+Connect to mongodb<br>
+`use contactbook` to create new db in mongo<br>
+`db.createUser({ user: "contactbook", pwd: "contactbook", roles: [ { role: "readWrite", db: "contactbook"} ] })` to create user
+
+###API
