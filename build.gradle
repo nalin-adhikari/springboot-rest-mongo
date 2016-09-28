@@ -24,6 +24,8 @@ dependencies {
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-mongodb', version: '1.4.1.RELEASE'
 	
 	compile group: 'org.mongodb', name: 'mongo-java-driver', version: '3.4.0-beta1'
+	
+	compile 'javax.mail:mail:1.4'
 	   
     testCompile 'junit:junit:4.12'
 }
