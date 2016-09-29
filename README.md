@@ -12,5 +12,26 @@ Connect to mongodb<br>
 
 ###API
 
-#### Test API
-```http://localhost:8080/```
+```Base URI : http://localhost:8080```
+
+#### Test
+```URI : /```
+```Request Method : GET```
+
+#### Get All Persons
+```URI : /persons/```
+```Request Method : GET```
+
+#### Get One Person
+```URI : /persons/{id}```
+```Request Method : GET```
+
+#### Add All Persons
+```URI : /persons/```
+```Request Method : POST```
+```Request Body : List<Person>```
+
+#### Add One Person
+```URI : /persons/```
+```Request Method : POST```
+```Request Body : Person```
