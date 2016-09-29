@@ -15,23 +15,23 @@ Connect to mongodb<br>
 ```Base URI : http://localhost:8080```
 
 #### Test
-```URI : /```
+```URI : /```<br/>
 ```Request Method : GET```
 
 #### Get All Persons
-```URI : /persons/```
+```URI : /persons/```<br/>
 ```Request Method : GET```
 
 #### Get One Person
-```URI : /persons/{id}```
+```URI : /persons/{id}```<br/>
 ```Request Method : GET```
 
 #### Add All Persons
-```URI : /persons/```
-```Request Method : POST```
+```URI : /persons/```<br/>
+```Request Method : POST```<br/>
 ```Request Body : List<Person>```
 
 #### Add One Person
-```URI : /persons/```
-```Request Method : POST```
+```URI : /persons/```<br/>
+```Request Method : POST```<br/>
 ```Request Body : Person```
