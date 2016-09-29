@@ -10,32 +10,32 @@
 * `use contactbook` to create new database in Mongo DB<br>
 * `db.createUser({ user: "contactbook", pwd: "contactbook", roles: [ { role: "readWrite", db: "contactbook"} ] })` to create user
 
-###API
+##API
 
 ```Base URI : http://localhost:8080```
 
-#### Test
+### Test
 ```URI : /```<br/>
 ```Request Method : GET```
 
-#### Get All Persons
+### Get All Persons
 ```URI : /persons/```<br/>
 ```Request Method : GET```
 
-#### Get One Person
+### Get One Person
 ```URI : /persons/{id}```<br/>
 ```Request Method : GET```
 
-#### Add All Persons
+### Add All Persons
 ```URI : /persons/```<br/>
 ```Request Method : POST```<br/>
 ```Request Body : List<Person>```
 
-#### Add One Person
+### Add One Person
 ```URI : /persons/```<br/>
 ```Request Method : POST```<br/>
 ```Request Body : Person```
 
-== License
+## License
 SpringBoot REST with MongoDB is Open Source project released under the
 http://www.apache.org/licenses/LICENSE-2.0.html[Apache 2.0 license].
