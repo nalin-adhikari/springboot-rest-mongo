@@ -37,5 +37,4 @@
 ```Request Body : Person```
 
 ## License
-SpringBoot REST with MongoDB is Open Source project released under the
-http://www.apache.org/licenses/LICENSE-2.0.html[Apache 2.0 license].
+SpringBoot REST with MongoDB is Open Source project released under the [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
