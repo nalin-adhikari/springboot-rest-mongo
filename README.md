@@ -12,7 +12,7 @@ Import this project to eclipse.
 
 ###API
 
-```Base URI : ```[http://localhost:8080](http://localhost:8080)
+```Base URI : http://localhost:8080```
 
 #### Test
 ```URI : /```<br/>
