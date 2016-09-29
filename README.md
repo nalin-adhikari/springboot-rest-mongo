@@ -1,8 +1,8 @@
 # SpringBoot REST with MongoDB
-Clone this project to your local workspace.<br/>
-`cd \path\to\project`<br/>
-`gradle eclipse`<br/>
-Import this project to eclipse.
+* Clone this project to your local workspace.<br/>
+* `cd \path\to\project`<br/>
+* `gradle eclipse`<br/>
+* Import this project to eclipse.
 
 ##Mongodb Configuration:
 * Download [Mongo DB](https://www.mongodb.com/download-center)<br>
