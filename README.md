@@ -35,3 +35,7 @@
 ```URI : /persons/```<br/>
 ```Request Method : POST```<br/>
 ```Request Body : Person```
+
+== License
+SpringBoot REST with MongoDB is Open Source project released under the
+http://www.apache.org/licenses/LICENSE-2.0.html[Apache 2.0 license].
