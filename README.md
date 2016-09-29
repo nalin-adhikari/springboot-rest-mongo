@@ -11,3 +11,6 @@ Connect to mongodb<br>
 `db.createUser({ user: "contactbook", pwd: "contactbook", roles: [ { role: "readWrite", db: "contactbook"} ] })` to create user
 
 ###API
+
+#### Test API
+```http://localhost:8080/```
