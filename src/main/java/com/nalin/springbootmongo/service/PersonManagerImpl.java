@@ -45,8 +45,8 @@ public class PersonManagerImpl implements PersonManager {
 	 */
 	@Override
 	public Person update(Person t) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return this.personRepository.save(t);
 	}
 
 	/* (non-Javadoc)
