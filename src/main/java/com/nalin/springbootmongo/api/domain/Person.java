@@ -8,6 +8,7 @@ import java.util.Date;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
@@ -19,7 +20,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Person implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
 	private String id;
 	private String firstName;
@@ -29,12 +30,15 @@ public class Person implements Serializable {
 	private String email;
 	@CreatedDate
 	private Date createdDate;
+	@LastModifiedDate
+	private Date modifiedDate;
 
 	public Person() {
 		super();
 	}
 
-	public Person(String firstName, String lastName, String address, String phone, String email, Date createdDate) {
+	public Person(String firstName, String lastName, String address, String phone, String email, Date createdDate,
+			Date modifiedDate) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -42,6 +46,7 @@ public class Person implements Serializable {
 		this.phone = phone;
 		this.email = email;
 		this.createdDate = createdDate;
+		this.modifiedDate = modifiedDate;
 	}
 
 	public String getId() {
@@ -98,6 +103,14 @@ public class Person implements Serializable {
 
 	public void setCreatedDate(Date createdDate) {
 		this.createdDate = createdDate;
+	}
+
+	public Date getModifiedDate() {
+		return modifiedDate;
+	}
+
+	public void setModifiedDate(Date modifiedDate) {
+		this.modifiedDate = modifiedDate;
 	}
 
 	@Override
