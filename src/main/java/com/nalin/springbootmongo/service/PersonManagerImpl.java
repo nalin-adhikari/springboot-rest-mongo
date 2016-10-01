@@ -70,8 +70,13 @@ public class PersonManagerImpl implements PersonManager {
 	 */
 	@Override
 	public void removeBy(String id) {
-		// TODO Auto-generated method stub
-
+		
+		Person t = this.personRepository.findOne(id);
+		
+		if(t != null){
+			
+			this.personRepository.delete(id);
+		}
 	}
 
 	/* (non-Javadoc)
