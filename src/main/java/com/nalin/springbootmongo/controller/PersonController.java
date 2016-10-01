@@ -47,7 +47,7 @@ public class PersonController {
 		
 	}
 	
-	@RequestMapping(method=RequestMethod.POST)
+	@RequestMapping(value="/all", method=RequestMethod.POST)
 	public List<Person> addAll(@RequestBody List<Person> persons){
 		
 		return personManager.addAll(persons);
