@@ -93,8 +93,8 @@ public class PersonManagerImpl implements PersonManager {
 	 */
 	@Override
 	public List<Person> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return this.personRepository.findAll();
 	}
 
 	/* (non-Javadoc)
