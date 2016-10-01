@@ -111,8 +111,8 @@ public class PersonManagerImpl implements PersonManager {
 	 */
 	@Override
 	public Long countRecord() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return this.personRepository.count();
 	}
 
 }
