@@ -5,10 +5,12 @@ package com.nalin.springbootmongo.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.nalin.springbootmongo.api.PersonManager;
 import com.nalin.springbootmongo.api.domain.Person;
+import com.nalin.springbootmongo.repository.PersonRepository;
 
 /**
  * @author nalin
@@ -17,13 +19,16 @@ import com.nalin.springbootmongo.api.domain.Person;
 @Service
 public class PersonManagerImpl implements PersonManager {
 
+	@Autowired
+	private PersonRepository personRepository;
+	
 	/* (non-Javadoc)
 	 * @see com.nalin.springbootmongo.api.CrudManager#addNew(java.io.Serializable)
 	 */
 	@Override
 	public Person addNew(Person t) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return this.personRepository.save(t);
 	}
 
 	/* (non-Javadoc)
