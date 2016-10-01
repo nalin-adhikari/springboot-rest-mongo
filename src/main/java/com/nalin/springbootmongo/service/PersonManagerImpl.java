@@ -7,6 +7,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import com.nalin.springbootmongo.api.PersonManager;
 import com.nalin.springbootmongo.api.domain.Person;
@@ -54,8 +55,14 @@ public class PersonManagerImpl implements PersonManager {
 	 */
 	@Override
 	public Person remove(Person t) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		t = this.personRepository.findOne(t.getId());
+		if(t != null){
+			this.personRepository.delete(t);
+			return t;
+		}
+		
+		throw new IllegalArgumentException("Person not found.");
 	}
 
 	/* (non-Javadoc)
