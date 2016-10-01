@@ -37,18 +37,6 @@ public class Person implements Serializable {
 		super();
 	}
 
-	public Person(String firstName, String lastName, String address, String phone, String email, Date createdDate,
-			Date modifiedDate) {
-		super();
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.address = address;
-		this.phone = phone;
-		this.email = email;
-		this.createdDate = createdDate;
-		this.modifiedDate = modifiedDate;
-	}
-
 	public String getId() {
 		return id;
 	}
