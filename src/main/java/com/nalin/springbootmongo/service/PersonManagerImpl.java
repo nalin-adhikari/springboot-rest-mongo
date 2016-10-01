@@ -84,8 +84,8 @@ public class PersonManagerImpl implements PersonManager {
 	 */
 	@Override
 	public Person find(String id) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return this.personRepository.findOne(id);
 	}
 
 	/* (non-Javadoc)
