@@ -36,8 +36,8 @@ public class PersonManagerImpl implements PersonManager {
 	 */
 	@Override
 	public List<Person> addAll(List<Person> list) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return this.personRepository.save(list);
 	}
 
 	/* (non-Javadoc)
