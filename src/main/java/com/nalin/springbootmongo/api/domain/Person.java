@@ -18,6 +18,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "contactbook")
 public class Person implements Serializable {
 
+	private static final long serialVersionUID = 1L;
+	
 	@Id
 	private String id;
 	private String firstName;
