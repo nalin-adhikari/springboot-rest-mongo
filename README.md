@@ -4,13 +4,13 @@
 * `gradle eclipse`<br/>
 * Import this project to eclipse.
 
-##Mongodb Configuration:
+## Mongodb Configuration:
 * Download [Mongo DB](https://www.mongodb.com/download-center)<br>
 * Connect to Mongo DB<br>
 * `use contactbook` to create new database in Mongo DB<br>
 * `db.createUser({ user: "contactbook", pwd: "contactbook", roles: [ { role: "readWrite", db: "contactbook"} ] })` to create user
 
-##API
+## API
 
 ```Base URI : http://localhost:9090```
 
